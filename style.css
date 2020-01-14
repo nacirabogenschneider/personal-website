@@ -11,12 +11,12 @@
 .h3{
   font-family: Comfortaa;
   font-size: 28px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   color: #60579d;
 }
-p{
+/* p{
   border: 1px solid black;
-}
+} */
 body{
   display:grid;
   grid-template-rows: auto auto 100px;
@@ -65,7 +65,20 @@ body{
 }
 .introduction{
   width: 100%;
-  border: 3px dotted black; 
+  /* border: 3px dotted black;  */
+}
+.big-card{
+  grid-area: big-card;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  /* border: 3px dotted black; */
+  width: 100%;
+}
+.big-card h2,h3,p,button{
+  align-self: flex-start;
 }
 /* media queries start */
 @media only screen and (max-width: 500px)  {
@@ -81,6 +94,22 @@ body{
 .h2{
     font-size: 20px;
   }
+  .big-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top:20px;
+    margin-left:0px;
+  }
+  .introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:20px;
+  }
+  .big-card h2,h3,p,button{
+    align-self: none-tart;
+  }
 }
 /* media queries end */
 .image-rounded{
@@ -91,15 +120,10 @@ body{
   box-shadow: 0 5px 10px #60579d;
 
 }
-.big-card{
-  grid-area: big-card;
-  border: 3px dotted black;
-  width: 100%;
-  
-}
+
 .information{
   grid-area: information;
-  border: 3px dotted black;
+  /* border: 3px dotted black; */
 }
 
 
