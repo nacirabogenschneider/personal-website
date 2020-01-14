@@ -7,11 +7,6 @@
   font-family: Comfortaa;
   font-size: 32px;
   color: #12a29b;
-
-  @media (min-width:500px){
-    font-size: 10px;
-    background: yellow;
-  }
 }
 .h3{
   font-family: Comfortaa;
@@ -46,55 +41,66 @@ body{
   margin: 0 5px 10px 5px;
 
 }
-
+/* display: grid;
+  grid-template-rows: 100px auto 80px;
+  grid-template-columns: auto 200px;
+  grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+  height: 100vh; */
 .scroll-container{
-  
-  grid-template-rows: auto auto;
-  background:white;
-  /* flex-direction: column; */
-  flex-direction: column;   
-  align-items: flex-start;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 250px auto;
+  grid-template-areas: 
+  "introduction big-card"
+  "introduction  big-card"
+  "information information";
+  height: 100vh;
   color: #12a29b;
+  background:white;
   overflow-y:scroll;
   padding:24px; 
 }
 .introduction{
-  display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-     "image-rounded image-rounded"
-     "big-card big-card";
   width: 100%;
-  border: 3px dotted red; 
-
-  @media only screen and (min-width: 500px)  {
-    grid-template-columns: 20% auto;
-        grid-template-areas:
-        "image-rounded big-card"
-        "image-rounded big-card";
+  border: 3px dotted black; 
+}
+/* media queries start */
+@media only screen and (max-width: 500px)  {
+  .scroll-container{
+      grid-template-rows: auto auto auto auto;
+      grid-template-columns: 100% auto;
+      
+      grid-template-areas: 
+      "introduction introduction"
+      "big-card big-card"
+      "information information";
+}
+.h2{
+    font-size: 20px;
   }
 }
+/* media queries end */
 .image-rounded{
+  grid-area: image-rounded;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 240px;
+  height: 240px;
   box-shadow: 0 5px 10px #60579d;
 
 }
 .big-card{
-
-  border: 3px dotted blue;
+  grid-area: big-card;
+  border: 3px dotted black;
   width: 100%;
   
 }
-/* grid-template-areas:
-"header   header"
-    "sidebar  content"
-    "sidebar2 sidebar2"
-    "footer   footer";
-} */
-
-
+.information{
+  grid-area: information;
+  border: 3px dotted black;
+}
 
 
 .bottom-navigation{
