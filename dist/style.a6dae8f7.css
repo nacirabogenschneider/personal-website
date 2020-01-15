@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   display: grid;
   grid-template-rows: auto auto 80px;
@@ -12,6 +13,9 @@ body {
   font-family: Comfortaa;
   font-size: 32px;
   color: #12a29b; }
+  @media only screen and (max-width: 500px) {
+    .h2 {
+      font-size: 14px; } }
 
 .h3 {
   font-family: Comfortaa;
@@ -48,12 +52,25 @@ body {
   grid-template-areas: "introduction big-card" "introduction  big-card" "information information";
   color: #12a29b;
   overflow-y: scroll; }
+  @media only screen and (max-width: 500px) {
+    .scroll-container {
+      grid-template-rows: auto auto auto auto;
+      grid-template-columns: 100% auto;
+      grid-template-areas: "introduction introduction" "big-card big-card" "information information";
+      margin-left: 0px;
+      margin-right: 0px; } }
 
 .introduction {
   /* border: 3px solid blue; */
   width: auto;
   text-align: center;
   /* border: 3px dotted black;  */ }
+  @media only screen and (max-width: 500px) {
+    .introduction {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 20px; } }
 
 .big-card {
   /* border: 3px solid blue; */
@@ -65,9 +82,22 @@ body {
   margin-left: 70px;
   /* border: 3px dotted black; */
   width: auto; }
+  @media only screen and (max-width: 500px) {
+    .big-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 25px;
+      margin-left: 0px;
+      border-top: 1px solid #60579d;
+      border-bottom: 1px solid #60579d;
+      padding: 25px 15px; } }
 
 .big-card h2, h3, p, button {
   align-self: flex-start; }
+  @media only screen and (max-width: 500px) {
+    .big-card h2, h3, p, button {
+      align-self: none-tart; } }
 
 .card {
   display: flex;
@@ -78,10 +108,20 @@ body {
   height: auto;
   border: 2px solid #0099aa;
   border-radius: 10px;
-  width: 250px;
-  margin-right: auto;
+  width: 100%;
+  margin: 10px;
   /* margin-top: 10px; */
   /* text-align:center; */ }
+  @media (max-width: 810px) {
+    .card {
+      width: auto;
+      margin: 20px 50px;
+      border: 2px solid red; } }
+  @media (max-width: 500‚px) {
+    .card {
+      width: auto;
+      margin: 5px 0;
+      border: 2px solid blue; } }
 
 .card__image {
   /* border: 2px solid #0099aa; */
@@ -121,6 +161,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
   /* flex-wrap: wrap; */ }
+  @media only screen and (max-width: 500px) {
+    .ref {
+      display: flex;
+      flex-direction: column; } }
+  @media (max-width: 810px) {
+    .ref {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid red; } }
 
 nav {
   z-index: 1;
@@ -138,39 +187,6 @@ nav {
   height: 48px; }
 
 /* media queries start */
-@media only screen and (max-width: 500px) {
-  .scroll-container {
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 100% auto;
-    grid-template-areas: "introduction introduction" "big-card big-card" "information information";
-    margin-left: 0px;
-    margin-right: 0px; }
-  .h1 {
-    font-size: 20px;
-    margin-top: 10px; }
-  .h2 {
-    font-size: 14px; }
-  .big-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 25px;
-    margin-left: 0px;
-    border-top: 1px solid #60579d;
-    border-bottom: 1px solid #60579d;
-    padding: 25px 15px; }
-  .introduction {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px; }
-  .big-card h2, h3, p, button {
-    align-self: none-tart; }
-  .ref {
-    display: flex;
-    flex-direction: column; } }
-
-/* media queries end */
 
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
