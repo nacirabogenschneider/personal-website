@@ -43,9 +43,11 @@ body{
 }
 
 .scroll-container{
+  padding: 24px;
+  /* border: 3px solid red; */
   display: grid;
   grid-template-rows: auto auto auto auto;
-  grid-template-columns: 250px auto;
+  grid-template-columns: auto auto;
   grid-template-areas: 
   "introduction big-card"
   "introduction  big-card"
@@ -54,10 +56,13 @@ body{
   overflow-y:scroll;
 }
 .introduction{
-  width: 100%;
+  /* border: 3px solid blue; */
+  width: auto;
+  text-align: center;
   /* border: 3px dotted black;  */
 }
 .big-card{
+  /* border: 3px solid blue; */
   grid-area: big-card;
   display: flex;
   flex-direction: column;
@@ -75,6 +80,7 @@ body{
   justify-content: flex-start;
   flex-direction:column;
   align-items: center;
+  flex-wrap: wrap;
   height: auto;
   border: 2px solid #0099aa;
   border-radius: 10px;
@@ -98,6 +104,11 @@ body{
 
 }
 .information{
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  /* border: 3px solid blue; */
+  padding: 24px;
   /* background: yellow; */
 
   /* width: 100%; */
@@ -105,8 +116,9 @@ body{
   /* border: 3px dotted black; */
 }
 .tags{
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
+  width: auto;
 }
 .table{
 display: flex;
@@ -147,8 +159,13 @@ nav{
       margin-left: 0px;
       margin-right: 0px;
 }
+.h1{
+    font-size: 20px;
+margin-top: 10px;
+
+  }
 .h2{
-    font-size: 22px;
+    font-size: 14px;
   }
   .big-card{
     display: flex;
