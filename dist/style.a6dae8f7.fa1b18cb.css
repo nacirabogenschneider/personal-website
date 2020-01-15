@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   display: grid;
   grid-template-rows: auto auto 48px;
@@ -8,7 +7,7 @@ body {
 .h1 {
   font-family: Comfortaa;
   margin-top: 20px; }
-  @media only screen and (max-width: 500px) {
+  @media (max-width: 576px) {
     .h1 {
       font-size: 25px; } }
 
@@ -16,7 +15,7 @@ body {
   font-family: Comfortaa;
   font-size: 32px;
   color: #12a29b; }
-  @media only screen and (max-width: 500px) {
+  @media (max-width: 576px) {
     .h2 {
       font-size: 16px; } }
 
@@ -48,14 +47,16 @@ body {
 
 .scroll-container {
   padding: 24px;
-  /* border: 3px solid red; */
   display: grid;
   grid-template-rows: auto auto auto auto;
   grid-template-columns: auto auto;
   grid-template-areas: "introduction big-card" "introduction  big-card" "information information";
   color: #12a29b;
   overflow-y: scroll; }
-  @media only screen and (max-width: 500px) {
+  @media (max-width: 360px) {
+    .scroll-container {
+      width: auto; } }
+  @media (max-width: 576px) {
     .scroll-container {
       grid-template-rows: auto auto auto auto;
       grid-template-columns: 100% auto;
@@ -68,7 +69,7 @@ body {
   width: auto;
   text-align: center;
   /* border: 3px dotted black;  */ }
-  @media only screen and (max-width: 500px) {
+  @media (max-width: 576px) {
     .introduction {
       display: flex;
       flex-direction: row;
@@ -85,7 +86,7 @@ body {
   margin-left: 70px;
   /* border: 3px dotted black; */
   width: auto; }
-  @media only screen and (max-width: 500px) {
+  @media (max-width: 576px) {
     .big-card {
       display: flex;
       flex-direction: column;
@@ -98,18 +99,32 @@ body {
 
 .big-card h2, h3, p, button {
   align-self: flex-start; }
-  @media only screen and (max-width: 500px) {
+  @media (max-width: 576px) {
     .big-card h2, h3, p, button {
       align-self: none-tart; } }
 
-.card {
+.ref {
+  border: 2px solid red;
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  /* flex-wrap: wrap; */ }
+  @media (max-width: 768px) {
+    .ref {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
+
+.card {
+  background: red;
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
   height: auto;
   border: 2px solid #0099aa;
   border-radius: 10px;
-  width: 100%;
+  width: auto;
   margin: 10px;
   /* margin-top: 10px; */
   /* text-align:center; */ }
@@ -117,15 +132,10 @@ body {
     margin: 6px; }
   .card h4 {
     margin: 6px; }
-  @media (max-width: 810px) {
+  @media (max-width: 768px) {
     .card {
-      width: auto;
-      margin: 20px 30px; } }
-  @media (max-width: 500‚px) {
-    .card {
-      width: auto;
-      margin: 20px 0; } }
-  @media (max-width: 375px) {
+      width: auto; } }
+  @media (max-width: 576px) {
     .card {
       width: auto;
       margin: 20px 0; } }
@@ -163,6 +173,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   width: auto; }
 
 .single__table {
@@ -170,20 +181,6 @@ body {
   padding: 10px;
   margin-right: 30px;
   width: auto; }
-
-.ref {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  /* flex-wrap: wrap; */ }
-  @media (max-width: 500px) {
-    .ref {
-      display: flex;
-      flex-direction: column; } }
-  @media (max-width: 810px) {
-    .ref {
-      display: flex;
-      flex-direction: column; } }
 
 nav {
   z-index: 1;
