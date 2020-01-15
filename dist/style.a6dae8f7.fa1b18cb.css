@@ -164,8 +164,7 @@ body {
 .tags {
   width: auto;
   margin: 0;
-  box-sizing: border-box;
-  border: 1px solid #60579d; }
+  box-sizing: border-box; }
 
 .tags__tag {
   margin: 5px 6px;
