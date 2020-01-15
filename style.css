@@ -49,18 +49,9 @@ body{
   margin: 0 5px 10px 5px;
 
 }
-/* display: grid;
-  grid-template-rows: 100px auto 80px;
-  grid-template-columns: auto 200px;
-  grid-template-areas: 
-    "header header"
-    "main aside"
-    "footer footer";
-  height: 100vh; */
 
 .scroll-container{
   /* background: purple; */
- 
   /* border: 3px dotted black;  */
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -69,11 +60,8 @@ body{
   "introduction big-card"
   "introduction  big-card"
   "information information";
-  /* height: 100vh;
-  width: 100vw; */
   color: #12a29b;
   overflow-y:scroll;
-  /* padding:24px;  */
 }
 .introduction{
   width: 100%;
@@ -122,7 +110,7 @@ body{
 .information{
   /* background: yellow; */
 
-  width: 100%;
+  /* width: 100%; */
   grid-area: information;
   /* border: 3px dotted black; */
 }
@@ -133,11 +121,12 @@ body{
 .table{
 display: flex;
 flex-direction: column;
-align-items:center;
+align-items:flex-start;
 }
 .ref{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   /* flex-wrap: wrap; */
 }
 nav{
