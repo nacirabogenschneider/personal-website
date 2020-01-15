@@ -60,7 +60,7 @@
   "information information";
   color: #12a29b;
   overflow-y:scroll;
-  @media (max-width: 360px){
+  @media (min-width: 350px){
     // overflow-x: hidden;
     width: auto;
   }
@@ -173,8 +173,6 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   width: 100%;
-  
-   
 }
 .image-rounded{
   grid-area: image-rounded;
