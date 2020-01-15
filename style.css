@@ -20,6 +20,7 @@
 body{
   display:grid;
   grid-template-rows: auto auto 100px;
+  margin: 0;
   height: 100vh;
   font-family: Raleway;
   font-weight: 100;
@@ -29,13 +30,17 @@ body{
   /* display:flex; */
   /* justify-content: center;
   align-items: center; */
+  z-index: 1;
   text-align: center;
   color:  #60579d;
-  border-bottom: 1px solid  #60579d; 
+  /* border-bottom: 1px solid  #60579d;  */
+  box-shadow: 0 0px 25px 5px #3a374e;
 }
+
 .header__button{
   border: 1px solid #60579d;
-  border-radius: 12px;
+  border-radius: 15px;
+  font-size: 20px; ;
   background: white;
   padding: 5px;
   margin: 0 5px 10px 5px;
@@ -97,7 +102,7 @@ body{
       margin-right: 0px;
 }
 .h2{
-    font-size: 20px;
+    font-size: 22px;
   }
   .big-card{
     display: flex;
@@ -141,7 +146,9 @@ body{
   align-items: center;
 }
 nav{
-  border-top: 1px solid  #60579d; 
+  z-index:  1;
+  box-shadow: 0 0px 25px 5px #3a374e;
+  /* border-top: 1px solid  #60579d;  */
 
 }
 .bottom-navigation__image{
