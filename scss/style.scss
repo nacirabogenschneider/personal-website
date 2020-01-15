@@ -7,17 +7,16 @@
 .h1{
   font-family: Comfortaa;
   margin-top: 20px;
-  // @media only screen and (max-width: 500px){
-  //   font-size: 20px;
-  //   margin-top: 10px;
-  // }
+  @media only screen and (max-width: 500px){
+    font-size: 25px;
+  }
 }
 .h2{
   font-family: Comfortaa;
   font-size: 32px;
   color: #12a29b;
   @media only screen and (max-width: 500px){
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .h3{
@@ -114,34 +113,42 @@
 }
 .card{
   display:flex;
-  justify-content: flex-start;
+  // justify-content: space-around;
   flex-direction:column;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
   height: auto;
   border: 2px solid #0099aa;
   border-radius: 10px;
   width: 100%;
   margin: 10px;
+  p{ 
+    margin: 6px;
+  }
+  h4{ margin: 6px}
   // margin-right:auto;
   /* margin-top: 10px; */
   /* text-align:center; */
   
   @media (max-width: 810px) { 
     width: auto;
-    margin: 20px 50px;
-    border: 2px solid red;
+    margin: 20px 30px;
+   
   }
   @media (max-width: 500‚px){
     width: auto;
-    margin: 5px 0;
-    border: 2px solid blue;
+    margin: 20px 0;
+  }
+  @media (max-width: 375px){
+    width: auto;
+    margin: 20px 0;
   }
 }
 .card__image{
   /* border: 2px solid #0099aa; */
-  border-radius: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   width: 100%;
+  
    
 }
 .image-rounded{
@@ -179,16 +186,17 @@ align-items:flex-start;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 40px;
   
   /* flex-wrap: wrap; */
-  @media only screen and (max-width: 500px){
+  @media (max-width: 500px){
     display: flex;
     flex-direction: column;
   }
   @media (max-width: 810px) { 
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    
   }
 }
 nav{
@@ -204,8 +212,8 @@ nav{
 
 .bottom-navigation__image{
   /* flex-grow: 1; */
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
 }
 /* media queries start */
 

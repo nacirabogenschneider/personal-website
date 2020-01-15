@@ -1,13 +1,16 @@
 @charset "UTF-8";
 body {
   display: grid;
-  grid-template-rows: auto auto 80px;
+  grid-template-rows: auto auto 48px;
   height: 100vh;
   font-family: Raleway; }
 
 .h1 {
   font-family: Comfortaa;
   margin-top: 20px; }
+  @media only screen and (max-width: 500px) {
+    .h1 {
+      font-size: 25px; } }
 
 .h2 {
   font-family: Comfortaa;
@@ -15,7 +18,7 @@ body {
   color: #12a29b; }
   @media only screen and (max-width: 500px) {
     .h2 {
-      font-size: 14px; } }
+      font-size: 16px; } }
 
 .h3 {
   font-family: Comfortaa;
@@ -101,10 +104,8 @@ body {
 
 .card {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
   height: auto;
   border: 2px solid #0099aa;
   border-radius: 10px;
@@ -112,20 +113,27 @@ body {
   margin: 10px;
   /* margin-top: 10px; */
   /* text-align:center; */ }
+  .card p {
+    margin: 6px; }
+  .card h4 {
+    margin: 6px; }
   @media (max-width: 810px) {
     .card {
       width: auto;
-      margin: 20px 50px;
-      border: 2px solid red; } }
+      margin: 20px 30px; } }
   @media (max-width: 500‚px) {
     .card {
       width: auto;
-      margin: 5px 0;
-      border: 2px solid blue; } }
+      margin: 20px 0; } }
+  @media (max-width: 375px) {
+    .card {
+      width: auto;
+      margin: 20px 0; } }
 
 .card__image {
   /* border: 2px solid #0099aa; */
-  border-radius: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   width: 100%; }
 
 .image-rounded {
@@ -160,16 +168,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 40px;
   /* flex-wrap: wrap; */ }
-  @media only screen and (max-width: 500px) {
+  @media (max-width: 500px) {
     .ref {
       display: flex;
       flex-direction: column; } }
   @media (max-width: 810px) {
     .ref {
       display: flex;
-      flex-direction: column;
-      border: 2px solid red; } }
+      flex-direction: column; } }
 
 nav {
   z-index: 1;
@@ -183,8 +191,8 @@ nav {
 
 .bottom-navigation__image {
   /* flex-grow: 1; */
-  width: 48px;
-  height: 48px; }
+  width: 32px;
+  height: 32px; }
 
 /* media queries start */
 
