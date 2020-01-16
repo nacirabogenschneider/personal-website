@@ -164,7 +164,7 @@ body {
   background: green;
   display: flex;
   width: auto;
-  margin: 5;
+  margin: 0;
   box-sizing: border-box; }
 
 .tags__tag {
@@ -181,7 +181,8 @@ body {
   margin-top: 40px; }
 
 .tags__text-box {
-  border: 1px solid red; }
+  border: 1px solid red;
+  margin: 10px; }
 
 .table {
   display: flex;
