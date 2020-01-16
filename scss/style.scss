@@ -184,25 +184,28 @@
 
 }
 .information{
-  display: flex;
+  // display: flex;
   width: auto;
-  flex-direction: column;
+  // flex-direction: column;
   //padding: 24px;
   grid-area: information;
-  // background: yellow;
+  background: yellow;
   padding: 24px;
   @media (max-width: 576px){
     padding: 0;
   }
 }
 .tags{
-  // background: pink;
+background: green;
+  display: flex;
 width: auto;
-margin: 0;
+margin: 5;
 box-sizing: border-box;
+
 // border: 1px solid #60579d;
 }
 .tags__tag{
+  flex-grow: 1;
   margin: 5px 6px;  
   // font-size: 15px;
   padding: 5px 7px;
@@ -215,6 +218,9 @@ box-sizing: border-box;
 .tags__h3{
   color: #60579d;
   margin-top: 40px;
+}
+.tags__text-box{
+  border: 1px solid red;
 }
 .table{
   display: flex;

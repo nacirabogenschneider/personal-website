@@ -152,21 +152,23 @@ body {
   box-shadow: 0 5px 10px #60579d; }
 
 .information {
-  display: flex;
   width: auto;
-  flex-direction: column;
   grid-area: information;
+  background: yellow;
   padding: 24px; }
   @media (max-width: 576px) {
     .information {
       padding: 0; } }
 
 .tags {
+  background: green;
+  display: flex;
   width: auto;
-  margin: 0;
+  margin: 5;
   box-sizing: border-box; }
 
 .tags__tag {
+  flex-grow: 1;
   margin: 5px 6px;
   padding: 5px 7px;
   line-height: 3;
@@ -177,6 +179,9 @@ body {
 .tags__h3 {
   color: #60579d;
   margin-top: 40px; }
+
+.tags__text-box {
+  border: 1px solid red; }
 
 .table {
   display: flex;
