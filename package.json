@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel -d docs src/index.hbs",
+    "build": "parcel build -d docs --public-url=./ index.html",
     "test": "echo \"Error: no test specified set\" && exit 1"
   },
   "repository": {
