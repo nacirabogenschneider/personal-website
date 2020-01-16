@@ -161,13 +161,9 @@ body {
 
 .tags {
   display: flex;
-  justify-content: flex-start;
   width: auto;
   margin: 0;
   box-sizing: border-box; }
-  @media (max-width: 768px) {
-    .tags {
-      flex-direction: column; } }
 
 .tags__tag {
   flex-grow: 1;
@@ -183,7 +179,8 @@ body {
   margin-top: 40px; }
 
 .tags__text-box {
-  width: auto; }
+  border: 1px solid red;
+  margin: 10px; }
 
 .table {
   display: flex;
