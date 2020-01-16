@@ -118,6 +118,15 @@ body {
   }
 }
 
+.big-card__button {
+  border: 1px solid #60579d;
+  border-radius: 15px;
+  font-size: 16px;
+  background: white;
+  padding: 5px;
+  margin: 0 5px 10px 5px;
+}
+
 .big-card h2, h3, p, button {
   align-self: flex-start;
 }
