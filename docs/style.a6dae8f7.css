@@ -43,7 +43,7 @@ body {
   z-index: 1;
   text-align: center;
   color: #60579d;
-  box-shadow: 0 0px 30px 0px #3a374e;
+  box-shadow: 0 0px 10px #3a374e;
 }
 
 .header__button {
@@ -294,7 +294,7 @@ body {
 
 nav {
   z-index: 1;
-  box-shadow: 0 0px 25px 5px #3a374e;
+  box-shadow: 0 0px 10px #3a374e;
   /* border-top: 1px solid  #60579d;  */
 }
 
