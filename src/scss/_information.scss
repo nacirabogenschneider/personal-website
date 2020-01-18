@@ -1,0 +1,12 @@
+.information{
+    // display: flex;
+    width: auto;
+    // flex-direction: column;
+    //padding: 24px;
+    grid-area: information;
+    // background: yellow;
+    padding: 24px;
+    @media (max-width: 576px){
+      padding: 0;
+    }
+  }

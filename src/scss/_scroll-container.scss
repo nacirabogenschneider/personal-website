@@ -1,0 +1,30 @@
+
+.scroll-container{
+    padding: 24px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "introduction big-card"
+    "introduction  big-card"
+    "information information";
+    color: var(--petrol);
+    overflow-y:scroll;
+    @media (min-width: 350px){
+      // overflow-x: hidden;
+      width: auto;
+    }
+    @media (max-width: 576px){
+          grid-template-rows: auto auto auto auto;
+          grid-template-columns: 100% auto;
+          grid-template-areas: 
+          "introduction introduction"
+          "big-card big-card"
+          "information information";
+          margin-left: 0px;
+          margin-right: 0px;
+    }
+    @media (min-width: 768px){
+          overflow-y: visible;
+    }
+  }

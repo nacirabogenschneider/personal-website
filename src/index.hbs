@@ -21,39 +21,32 @@
   <header class="header">
     <h1 class="h1">Nacira Bogenschneider</h1 class="h1">
     <h2 class="h2">Web Developer & Grafik Designer</h2>
-    <a href="#work"><button class="header__button" type="button">Experience</button></a>
-    <a href="#education"><button class="header__button" type="button">Education</button></a>
-    <a href="#references"><button class="header__button" type="button">References</button type="button"></a>
+    <section class="header__button-group">
+    <a href="#work" class="header__button">Experience</a>
+    <a href="#education" class="header__button">Education</a>
+    <a href="#references" class="header__button" >References</a>
+    </section>
   </header>
+  {{!-- {{>header}} --}}
 <!-----------content section---------------------------------------------->
   <main class="scroll-container">
-
     <!-- grid-start -->
-   <section class="introduction">
+    <section class="introduction">
       <!-- grid-element 1 image-rounded  -->
-      <img  class="image-rounded"  src="images/nacira.jpg" alt=""> 
+      <img  class="introduction__image-rounded"  src="images/nacira.jpg" alt=""> 
       <!-- grid-element 2 big-card -->
     </section>
-<section class="big-card">   
-      <h2 class="big-card__h2">Kontaktdaten</h2>
+    <section class="introduction__big-card">   
+      <h2 class="introduction__h2">Kontaktdaten</h2>
       <h3>Nacira Bogenschneider</h3>
-      <h4 class="big-card__h4">Telefonnummer: 0172&nbsp;528&nbsp;70&nbsp;69</h4>
-      <h4 class="big-card__h4">E&#8209;Mail: mail@naciradesign.de</h4>     
-      <a href="mailto:mail@nacira.de" class= "big-card__button"> Schreib mir</a>
-</section>
+      <h4 class="introduction__h4">Telefonnummer: 0172&nbsp;528&nbsp;70&nbsp;69</h4>
+      <h4 class="introduction__h4">E&#8209;Mail: mail@naciradesign.de</h4>     
+      <a href="mailto:mail@nacira.de"> Schreib mir</a>
+    </section>
     
-    {{!-- <section class="big-card">   
-      <h2 class="h3">Kontaktdaten</h2>
-      <h3>Nacira Bogenschneider</h3>
-      <p>Telefon Nummer </p>
-      <p>0172/528 70 69</p>
-      <button> Schreib</button>
-    </section> --}}
-
-    <!-- grid-element 3 information -->
     <section class="information">
       <section class="tags">
-        <section class="tags__text-box">
+        <section class="tags__text">
         <h3 class="tags__h3">Web Development</h3>
           <span class="tags__tag">HTML</span> 
           <span class="tags__tag">CSS</span>
@@ -68,7 +61,7 @@
           <span class="tags__tag">Java </span>
           <span class="tags__tag">MongoDB</span>
         </section>
-        <section class="tags__text-box">
+        <section class="tags__text">
         <h3 class="tags__h3"> Grafik&nbsp;Design</h3>
         <span class="tags__tag">Corporate </span>
         <span class="tags__tag">Design </span>
@@ -83,7 +76,7 @@
         <span class="tags__tag">Infografiken </span>
         <span class="tags__tag">Illustrationen</span>
       </section>
-        <section class="tags__text-box">
+        <section class="tags__texx">
         <h3 class="tags__h3">Software</h3>
         <span class="tags__tag">Visual&nbsp;Studio&nbsp;Code </span>
         <span class="tags__tag">Brackets</span> 
@@ -99,7 +92,7 @@
         <span class="tags__tag">Joomla </span>
         <span class="tags__tag">xtCommerce</span>
         </section>
-        <section class="tags__text-box">
+        <section class="tags__text">
           <h3 class="tags__h3">Sprachen</h3>
           <span class="tags__tag">Deutsch </span>
           <span class="tags__tag">Englisch </span>
@@ -108,7 +101,7 @@
 
 <!-- WORK & EDUCATION -->
       <section class="table">
-        <section class="single__table-left" id="work">
+        <section class="table__table-left" id="work">
         
         <h3 class="h3 tags__h3">Berufserfahrung</h3>
             <h4>08.2018 - Heute</h4>
@@ -130,7 +123,7 @@
            <p>Grafik Design Stud. Hilfskraft - TU - Braunschweig</p>
       </section>    
 
-        <section class="single__table-right" id="education">  
+        <section class="table__table-right" id="education">  
           <h2 class="h3 tags__h3">Ausbildung</h2>
           
           <h4>01.2020 - 03.2020</h4>
@@ -158,20 +151,20 @@
       <h2 class="h3">Referenzen</h2>
       
       <section class="ref" id="references">
-        <section class="card">
-          <a href="https://singularity-hr.com/"><img class="card__image" src="images/Singularity-HR_desktop.jpg" alt=""></a>
+        <section class="ref__card">
+          <a href="https://singularity-hr.com/"><img class="ref__card-image" src="images/Singularity-HR_desktop.jpg" alt=""></a>
           <h4>Singularity-HR</h4>
           <p>Webdesign und Umsetzung in WordPress, Anpassungen via CSS, bilingduale Umsetzung.</p>
         </section>
           <!-- END <section class="card"> -->
-        <section class="card">
-          <a href="https://wolfgang-borchert-schule.hamburg.de/"><img class="card__image" src="images/Wolfgang-Borchert-Schule.jpg" alt=""></a>
+        <section class="ref__card">
+          <a href="https://wolfgang-borchert-schule.hamburg.de/"><img class="ref__card-image" src="images/Wolfgang-Borchert-Schule.jpg" alt=""></a>
           <h4>Wolfgang-Borchert-Schule</h4>
           <p>Webdesign, Illustrationen und Umsetzung mit WordPress, Anpassungen via CSS.</p>    
         </section>
           <!-- END <section class="card"> -->
-        <section class="card">
-          <a href="https://naciradesign.de/"><img class="card__image" src="images/Projekt.jpg" alt=""></a>
+        <section class="ref__card">
+          <a href="https://naciradesign.de/"><img class="ref__card-image" src="images/Projekt.jpg" alt=""></a>
           <h4>Nacira Design</h4>
           <p>Webdesign, Illustrationen und Umsetzung mit WordPress, Anpassungen via CSS.</h3>
           <!-- END <section class="card"> -->
@@ -181,10 +174,10 @@
     </section>
   </main>
 
-  <nav class="bottom-navigation">
-    <img class="bottom-navigation__image" src="images/codepen-brands.svg" alt="github">
-    <img class="bottom-navigation__image" src="images/github-square-brands.svg" alt="github">
-    <img class="bottom-navigation__image" src="images/linkedin-brands.svg" alt="github">
-    <img class="bottom-navigation__image" src="images/xing-square-brands.svg" alt="github">
+  <nav class="nav__bottom-navigation">
+    <img class="nav__image" src="images/codepen-brands.svg" alt="github">
+    <img class="nav__image" src="images/github-square-brands.svg" alt="github">
+    <img class="nav__image" src="images/linkedin-brands.svg" alt="github">
+    <img class="nav__image" src="images/xing-square-brands.svg" alt="github">
   </nav>
 </html>
