@@ -246,10 +246,12 @@ body {
   width: auto;
   flex-grow: 1;
   padding-right: 20px;
+  margin-bottom: 46px;
 }
 @media (max-width: 576px) {
   .table__table-left {
     padding-right: 0;
+    margin-bottom: 12px;
   }
 }
 
@@ -259,10 +261,12 @@ body {
   width: auto;
   flex-grow: 1;
   padding-right: 20px;
+  margin-bottom: 46px;
 }
 @media (max-width: 576px) {
   .table__table-right {
     padding-right: 0;
+    margin-bottom: 12px;
   }
 }
 
