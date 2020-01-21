@@ -7,7 +7,8 @@ body {
 
 :root {
   --blueberry: #60579d;
-  --dark-blueberry: #3a374e;
+  --dark-blueberry: rgb(58, 55, 78);
+  --dark-bluberry-light: rgba(84, 81, 107, 0.6);
   --petrol:#12a29b;
   --gray: #43a391;
 }
@@ -74,7 +75,7 @@ body {
   background: white;
   padding: 6px;
   margin: 0 5px 10px 5px;
-  box-shadow: 0 0px 8px var(--dark-blueberry);
+  box-shadow: 0 0px 12px var(--dark-bluberry-light);
 }
 
 .scroll-container {
@@ -177,7 +178,7 @@ body {
   margin: 20px 5px;
   color: var(--dark-blueberry);
   text-align: left;
-  box-shadow: 0 0px 8px var(--dark-blueberry);
+  box-shadow: 0 0 12px var(--dark-bluberry-light);
 }
 
 .introduction__big-card a:hover {
