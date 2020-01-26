@@ -8,8 +8,8 @@ body {
 :root {
   --blueberry: #60579d;
   --dark-blueberry: rgb(58, 55, 78);
-  --dark-bluberry-light: rgba(84, 81, 107, 0.6);
-  --petrol:#12a29b;
+  --dark-bluberry-light: rgba(84, 81, 107, 0.5);
+  --petrol: #12a29b;
   --gray: #43a391;
 }
 
@@ -49,7 +49,7 @@ body {
   height: 100%;
   text-align: center;
   color: var(--blueberry);
-  box-shadow: 0 0px 10px var(--dark-blueberry);
+  box-shadow: 0 0px 3px var(--dark-blueberry);
   margin-bottom: 20px;
 }
 
@@ -59,23 +59,24 @@ body {
 
 .header__button-group a {
   text-decoration: none;
+  border: 0.5px solid var(--blueberry);
   color: var(--petrol);
 }
 
 .header__button-group a:hover {
   color: var(--blueberry);
-  box-shadow: inset 0 0px 8px var(--petrol);
+  box-shadow: inset 0 0px 5px var(--dark-bluberry-light);
 }
 
 .header__button {
-  border: 1px solid var(--blueberry);
+  border: none;
   color: var(--blueberry);
   border-radius: 15px;
   font-size: 16px;
   background: white;
   padding: 6px;
   margin: 0 5px 10px 5px;
-  box-shadow: 0 0px 12px var(--dark-bluberry-light);
+  box-shadow: 0 0px 5px var(--dark-bluberry-light);
 }
 
 .scroll-container {
@@ -171,14 +172,14 @@ body {
 .introduction__big-card a {
   text-decoration: none;
   color: var(--blueberry);
-  border: 0.8px solid var(--blueberry);
-  border-radius: 18px;
+  border: 0.5px solid var(--blueberry);
+  border-radius: 20px;
   font-size: 20px;
-  padding: 8px;
+  padding: 9px;
   margin: 20px 5px;
   color: var(--dark-blueberry);
   text-align: left;
-  box-shadow: 0 0 12px var(--dark-bluberry-light);
+  box-shadow: 0 0px 5px var(--dark-bluberry-light);
 }
 
 .introduction__big-card a:hover {
@@ -318,7 +319,7 @@ body {
 
 nav {
   z-index: 1;
-  box-shadow: 0 0px 10px #3a374e;
+  box-shadow: 0 0px 3px #3a374e;
 }
 
 .nav__bottom-navigation {
