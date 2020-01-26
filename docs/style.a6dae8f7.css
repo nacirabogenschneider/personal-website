@@ -163,8 +163,8 @@ body {
     justify-content: flex-start;
     margin-top: 25px;
     margin-left: 0px;
-    border-top: 1px solid var(--blueberry);
-    border-bottom: 1px solid var(--blueberry);
+    border-top: 0.8px solid var(--blueberry);
+    border-bottom: 0.8px solid var(--blueberry);
     padding: 25px 15px;
   }
 }
