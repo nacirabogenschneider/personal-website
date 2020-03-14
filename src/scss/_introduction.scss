@@ -1,8 +1,7 @@
 .introduction {
-  /* border: 3px solid blue; */
   width: auto;
   text-align: center;
-  /* border: 3px dotted black;  */
+
   @media (max-width: 576px) {
     display: flex;
     flex-direction: row;
@@ -29,14 +28,11 @@
   }
 }
 .introduction__big-card {
-  // border: 3px solid blue;
   grid-area: big-card;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin-left: 70px;
-  /* border: 3px dotted black; */
   width: auto;
   @media (max-width: 576px) {
     display: flex;
