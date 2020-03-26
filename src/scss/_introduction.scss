@@ -1,11 +1,9 @@
 .introduction {
+  display: flex;
   width: auto;
-  text-align: center;
-
+  justify-content: center;
   @media (max-width: 576px) {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
     margin-top: 20px;
   }
 }
@@ -31,7 +29,7 @@
   grid-area: big-card;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+
   align-items: flex-start;
   width: auto;
   @media (max-width: 576px) {
@@ -47,10 +45,8 @@
 }
 .introduction__big-card a {
   text-decoration: none;
-
   color: var(--blueberry);
   border: 0.5px solid var(--blueberry);
-
   border-radius: 20px;
   font-size: 20px;
   padding: 9px;

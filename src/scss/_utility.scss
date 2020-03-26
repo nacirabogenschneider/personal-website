@@ -1,23 +1,24 @@
-.h1{
-    font-family: Comfortaa;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    @media (max-width: 576px){
-      font-size: 25px;
-    }
+p {
+  font-size: 20px;
+}
+.h1 {
+  font-family: Raleway;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  @media (max-width: 576px) {
+    font-size: 25px;
   }
-  .h2{
-    font-family: Comfortaa;
-    font-size: 32px;
-    color: var(--petrol);
-    @media (max-width: 576px){
-      font-size: 16px;
-    }
+}
+.h2 {
+  font-family: Raleway;
+  font-size: 32px;
+  color: var(--petrol);
+  @media (max-width: 576px) {
+    font-size: 16px;
   }
-  .h3{
-    font-family: Comfortaa;
-    font-size: 28px;
-    /* border: 1px solid black; */
-    color: var(--blueberry);
-  }
-  
+}
+.h3 {
+  font-family: Raleway;
+  font-size: 28px;
+  color: var(--blueberry);
+}
