@@ -84,18 +84,18 @@ p {
 }
 
 .scroll-container {
-  padding: 24px;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
   grid-template-columns: auto auto;
   grid-template-areas: "image-rounded big-card" "image-rounded  big-card" "bootcamp bootcamp" "tags tags" "tables tables" "refs refs";
   color: var(--petrol);
   overflow-y: scroll;
-  padding: 30px 120px;
+  padding: 24px;
 }
 @media (min-width: 350px) {
   .scroll-container {
     width: 100vw;
+    padding: 5px;
   }
 }
 @media (max-width: 576px) {
@@ -105,6 +105,7 @@ p {
     grid-template-areas: "image-rounded image-rounded" "big-card big-card" "bootcamp bootcamp" "tags tags" "tables tables" "refs refs";
     margin-left: 0px;
     margin-right: 0px;
+    padding: 5px;
   }
 }
 

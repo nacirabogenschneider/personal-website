@@ -1,5 +1,4 @@
 .scroll-container {
-  padding: 24px;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
   grid-template-columns: auto auto;
@@ -12,9 +11,10 @@
     "refs refs";
   color: var(--petrol);
   overflow-y: scroll;
-  padding: 30px 120px;
+  padding: 24px;
   @media (min-width: 350px) {
     width: 100vw;
+    padding: 5px;
   }
   @media (max-width: 576px) {
     grid-template-rows: auto auto auto auto auto auto;
@@ -28,5 +28,6 @@
       "refs refs";
     margin-left: 0px;
     margin-right: 0px;
+    padding: 5px;
   }
 }
