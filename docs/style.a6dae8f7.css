@@ -17,6 +17,16 @@ p {
   font-size: 20px;
 }
 
+a {
+  color: #ee7600;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #ee7600;
+}
+
 .h1 {
   font-family: Raleway;
   margin-top: 20px;
