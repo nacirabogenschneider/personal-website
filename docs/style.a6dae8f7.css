@@ -100,7 +100,7 @@ a:hover {
   grid-template-areas: "image-rounded big-card" "image-rounded  big-card" "bootcamp bootcamp" "tags tags" "tables tables" "refs refs";
   color: var(--petrol);
   overflow-y: scroll;
-  padding: 24px 100px;
+  padding: 50px 120px;
 }
 @media (min-width: 350px) {
   .scroll-container {
@@ -191,8 +191,10 @@ a:hover {
 
 .bootcamp {
   grid-area: bootcamp;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 16px;
-  text-align: center;
   padding: 30px;
 }
 @media (max-width: 768px) {
@@ -202,12 +204,22 @@ a:hover {
 }
 
 .bootcamp_text {
+  display: flex;
+  align-items: center;
   text-align: left;
 }
 @media (max-width: 576px) {
   .bootcamp_text {
     padding: 0;
   }
+}
+
+.bootcamp_image {
+  height: 500px;
+}
+
+.bootcamp_capstone {
+  padding-left: 40px;
 }
 
 .tags {

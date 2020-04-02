@@ -1,9 +1,9 @@
 .bootcamp {
   grid-area: bootcamp;
-  // flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 16px;
-  text-align: center;
   padding: 30px;
 
   @media (max-width: 768px) {
@@ -11,8 +11,19 @@
   }
 }
 .bootcamp_text {
+  display: flex;
+align-items: center;
   text-align: left;
   @media (max-width: 576px) {
     padding: 0;
   }
+}
+
+.bootcamp_image{
+  height: 500px
+}
+
+
+.bootcamp_capstone{
+  padding-left: 40px;
 }
