@@ -199,7 +199,7 @@ a:hover {
 }
 @media (max-width: 768px) {
   .bootcamp {
-    padding: 0;
+    padding: 25px 15px;
   }
 }
 
@@ -211,15 +211,26 @@ a:hover {
 @media (max-width: 576px) {
   .bootcamp_text {
     padding: 0;
+    flex-direction: column;
   }
 }
 
 .bootcamp_image {
-  height: 500px;
+  height: 540px;
+}
+@media (max-width: 576px) {
+  .bootcamp_image {
+    height: 400px;
+  }
 }
 
 .bootcamp_capstone {
-  padding-left: 40px;
+  padding: 0 100px;
+}
+@media (max-width: 576px) {
+  .bootcamp_capstone {
+    padding: 0 0;
+  }
 }
 
 .tags {
@@ -227,11 +238,18 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   margin: 0;
+  padding: 0 30px;
   box-sizing: border-box;
 }
 @media (max-width: 768px) {
   .tags {
     flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .tags {
+    flex-direction: column;
+    padding: 0;
   }
 }
 
@@ -253,6 +271,11 @@ a:hover {
 .tags__text {
   margin: 0 10px;
 }
+@media (max-width: 576px) {
+  .tags__text {
+    padding: 0;
+  }
+}
 
 .table {
   grid-area: tables;
@@ -260,11 +283,14 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   flex: 1;
+  margin: 0;
+  padding: 40px;
   color: var(--petrol);
 }
 @media (max-width: 576px) {
   .table {
     flex-direction: column;
+    padding: 0 10px;
   }
 }
 
@@ -273,6 +299,15 @@ a:hover {
   flex-direction: column;
   flex-grow: 1;
   padding-right: 20px;
+}
+.table__table-left a {
+  color: #ee7600;
+  text-decoration: none;
+}
+.table__table-left a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #ee7600;
 }
 @media (max-width: 576px) {
   .table__table-left {
@@ -299,6 +334,7 @@ a:hover {
   justify-content: space-between;
   margin-bottom: 40px;
   flex-direction: column;
+  padding: 30px;
 }
 @media (max-width: 576px) {
   .ref {
@@ -355,6 +391,10 @@ a:hover {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   width: 100%;
+}
+
+.ref__heading {
+  align-self: flex-start;
 }
 
 nav {

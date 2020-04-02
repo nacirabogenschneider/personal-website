@@ -5,7 +5,7 @@
   justify-content: space-between;
   margin-bottom: 40px;
   flex-direction: column;
-
+  padding: 30px;
   @media (max-width: 576px) {
     flex-direction: column;
     align-items: center;
@@ -32,6 +32,7 @@
   border: 2px solid var(--petrol);
   border-radius: 10px;
   margin: 10px;
+
   p {
     margin: 6px;
   }
@@ -51,4 +52,7 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   width: 100%;
+}
+.ref__heading {
+  align-self: flex-start;
 }

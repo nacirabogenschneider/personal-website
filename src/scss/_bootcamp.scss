@@ -7,23 +7,29 @@
   padding: 30px;
 
   @media (max-width: 768px) {
-    padding: 0;
+    padding: 25px 15px;
   }
 }
 .bootcamp_text {
   display: flex;
-align-items: center;
+  align-items: center;
   text-align: left;
   @media (max-width: 576px) {
     padding: 0;
+    flex-direction: column;
   }
 }
 
-.bootcamp_image{
-  height: 500px
+.bootcamp_image {
+  height: 540px;
+  @media (max-width: 576px) {
+    height: 400px;
+  }
 }
 
-
-.bootcamp_capstone{
-  padding-left: 40px;
+.bootcamp_capstone {
+  padding: 0 100px;
+  @media (max-width: 576px) {
+    padding: 0 0;
+  }
 }
